@@ -23,3 +23,13 @@ A likelihood-driven algorithm that iteratively merges the most frequent adjacent
 ```bash
 python <rollno>_assignment2_wp.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
+
+### Unigram Language Model
+
+**Description:**  
+A probabilistic model that starts with a large candidate vocabulary and iteratively prunes tokens that contribute least to the corpus log-likelihood. Allows for multiple possible segmentations.
+
+**How to use:**
+```bash
+python <rollno>_assignment2_unigram.py --train <train_file.txt>
+```
