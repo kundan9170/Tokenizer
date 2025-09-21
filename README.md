@@ -1,6 +1,6 @@
 # Custom Subword Tokenizers
 
-This repository contains implementations of four subword tokenization algorithms: Byte-Pair Encoding (BPE), WordPiece, Unigram Language Model, and a SentencePiece-style BPE. These tokenizers are implemented from scratch in Python, using only the standard library and NumPy.
+This repository contains implementations of four subword tokenization algorithms: Byte-Pair Encoding (BPE), WordPiece, Unigram Language Model, and a SentencePiece-style BPE. These tokenizers are implemented from scratch in Python, using only the standard library and NumPy. These tokenizer contains several advanced optimizations to make it fast.
 
 ## Tokenizers
 
