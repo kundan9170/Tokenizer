@@ -20,6 +20,6 @@ python <rollno>_assignment2_bpe.py --train <train_file.txt> --input <input_file.
 A likelihood-driven algorithm that iteratively merges the most frequent adjacent token pairs that maximise the corpus log-likelihood under a unigram language model. Uses the `##` prefix for non-initial subwords.
 
 **How to use:**
-```bash```
+```bash
 python <rollno>_assignment2_wp.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
