@@ -10,8 +10,9 @@ This repository contains implementations of four subword tokenization algorithms
 
 **How to use:**
 
-```bash```
-python <rollno>_assignment2_bpe.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size> 
+```bash
+python <rollno>_assignment2_bpe.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
+```
 
 ### 2. WordPiece
 
@@ -21,3 +22,4 @@ A likelihood-driven algorithm that iteratively merges the most frequent adjacent
 **How to use:**
 ```bash```
 python <rollno>_assignment2_wp.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
+```
