@@ -31,7 +31,7 @@ A probabilistic model that starts with a large candidate vocabulary and iterativ
 
 **How to use:**
 ```bash
-python unigram_tokenizer.py --train <train_file.txt>
+python unigram_tokenizer.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
 
 ### 4. SentencePiece-style BPE
