@@ -11,7 +11,7 @@ This repository contains implementations of four subword tokenization algorithms
 **How to use:**
 
 ```bash
-python <rollno>_assignment2_bpe.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
+python byte-pair_tokenizer.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
 
 ### 2. WordPiece
@@ -21,15 +21,25 @@ A likelihood-driven algorithm that iteratively merges the most frequent adjacent
 
 **How to use:**
 ```bash
-python <rollno>_assignment2_wp.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
+python word-piece_tokenizer.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
 
-### Unigram Language Model
+### 3. Unigram Language Model
 
 **Description:**  
 A probabilistic model that starts with a large candidate vocabulary and iteratively prunes tokens that contribute least to the corpus log-likelihood. Allows for multiple possible segmentations.
 
 **How to use:**
 ```bash
-python <rollno>_assignment2_unigram.py --train <train_file.txt>
+python unigram_tokenizer.py --train <train_file.txt>
+```
+
+### 4. SentencePiece-style BPE
+
+**Description:**  
+An adaptation of the BPE algorithm that operates on a whitespace-free, normalised text string using a special marker (`▁`) to represent spaces. Includes Unicode NFKC normalisation and lowercasing.
+
+**How to use:**
+```bash
+python sentence-piece_tokenizer.py --train <train_file.txt> --input <input_file.txt> --vocab_size <size>
 ```
